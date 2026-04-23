@@ -1,0 +1,15 @@
+// ltl-x25519/main.ltl
+//
+// Curve25519 / X25519 scalar multiplication.
+//
+// This is an early skeleton — contribution is welcome! See the
+// README for build instructions.
+
+import std::io
+import std::fmt
+
+pub fn main(args: [str]) -> Int {
+    io::println("ltl-x25519 v0.1.0")
+    io::println("Curve25519 / X25519 scalar multiplication.")
+    0
+}
