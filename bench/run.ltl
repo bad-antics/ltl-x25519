@@ -1,0 +1,16 @@
+// bench/run.ltl — micro-benchmarks for ltl_x25519
+
+import std::time
+import std::io
+use ltl_x25519 as lib
+
+fn measure(label: str, f: fn() -> ()) {
+    let t0 = time::now_ns()
+    f()
+    let dt = time::now_ns() - t0
+    io::println("{label}: {dt} ns")
+}
+
+fn main() {
+    measure("load", fn() -> () { lib::main() })
+}
