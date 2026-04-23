@@ -1,0 +1,19 @@
+// types/shared.ltl — shared type aliases for ltl_x25519
+
+module ltl_x25519::types
+
+pub type Id = int
+pub type Name = str
+pub type Payload = list<int>
+
+pub enum Status {
+    Ok,
+    Pending,
+    Failed { reason: str },
+}
+
+pub struct Meta {
+    id: Id,
+    name: Name,
+    status: Status,
+}
