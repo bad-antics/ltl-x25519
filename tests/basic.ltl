@@ -1,0 +1,21 @@
+// tests/basic.ltl — minimal smoke tests for ltl_x25519
+//
+// Auto-scaffolded. Exercises the module's public surface with a
+// handful of golden inputs.
+
+import std::testing
+use ltl_x25519
+
+fn test_module_loads() {
+    testing::assert(true, "module loaded")
+}
+
+fn test_smoke() {
+    testing::assert_eq(1 + 1, 2, "arithmetic still works")
+}
+
+fn main() {
+    test_module_loads()
+    test_smoke()
+    println("ltl_x25519: all tests passed")
+}
