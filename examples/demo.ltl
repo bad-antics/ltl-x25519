@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_x25519
+
+import std::io
+use ltl_x25519 as lib
+
+fn main() {
+    io::println("ltl_x25519 demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
